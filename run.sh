@@ -1,5 +1,7 @@
-#!/bin/zsh
+#!/bin/bash
 
 nasm -f elf32 ordena.asm -o ordena.o
 gcc -m32 -c main.c -o main.o
-gcc -m32 -no-pie ordena.o main.o -o main 
+gcc -m32 -no-pie ordena.o main.o -o main
+./main
+rm *.o
