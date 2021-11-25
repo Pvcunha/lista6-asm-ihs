@@ -1,4 +1,4 @@
-SECTION .TEXT
+section .TEXT
 GLOBAL ordena
 
 ordena:
